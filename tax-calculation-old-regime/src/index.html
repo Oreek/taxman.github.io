@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your Tax</title>
+    <link rel="stylesheet" href="/tax-calculation-old-regime/src/style.css">
+    <link rel="stylesheet" href="/nav/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculate Your Tax</h1>
+        <h2>Old Regime</h2>
+        <div class="form-group">
+            <label for="netSalary">Net Salary:</label>
+            <input type="number" id="netSalary" placeholder="Enter your salary" oninput="calculateTax()">
+        </div>
+        <div class="form-group">
+            <label for="deduction">Deduction:</label>
+            <input type="number" id="deduction" readonly>
+        </div>
+        <div class="form-group">
+            <label for="taxPayable">Tax Payable:</label>
+            <input type="number" id="taxPayable" readonly>
+        </div>
+        <div class="form-group">
+            <label for="cashInHand">Cash in Hand:</label>
+            <input type="number" id="cashInHand" readonly>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-link" id="bug">meow</button>
+        <a href="/tax-define/src/index.html"><button class="tab-link" onclick="openTab(event, 'AboutTax')">About Tax</button></a>
+        <a href="/tax-calculation/src/index.html"><button class="tab-link">Calculation (New Regime)</button></a>
+        <a href="/h-page/src/index.html"><button class="tab-link">Home</button></a>
+        <a href="/about/src/index.html"><button class="tab-link">Profile</button></a>
+    </div>
+
+    <script src="/tax-calculation-old-regime/src/script.js"></script>
+</body>
+</html>

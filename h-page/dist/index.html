@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - h page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Content Container -->
+    <div class="content-container">
+        <!-- About Tax Tab Content -->
+        <div id="AboutTax" class="tab-content">
+            <h2>About Tax</h2>
+            <p>Information about tax systems and policies.</p>
+        </div>
+
+        <!-- Calculation (New Regime) Tab Content -->
+        <div id="NewRegimeCalc" class="tab-content">
+            <h2>Calculation (New Regime)</h2>
+            <p>Calculate your tax under the new tax regime.</p>
+            <input type="number" id="newRegimeIncome" placeholder="Enter income">
+            <button onclick="calculateNewRegime()">Calculate</button>
+            <p id="newRegimeResult"></p>
+        </div>
+
+        <!-- Calculation (Old Regime) Tab Content -->
+        <div id="OldRegimeCalc" class="tab-content">
+            <h2>Calculation (Old Regime)</h2>
+            <p>Calculate your tax under the old tax regime.</p>
+            <input type="number" id="oldRegimeIncome" placeholder="Enter income">
+            <button onclick="calculateOldRegime()">Calculate</button>
+            <p id="oldRegimeResult"></p>
+        </div>
+
+        <!-- About Tab Content -->
+        <div id="About" class="tab-content">
+            <h2>About</h2>
+            <p>About this tax calculation app.</p>
+        </div>
+    </div>
+
+    <!-- Tabs Navigation at Bottom -->
+    <div class="tabs">
+        <button class="tab-link" onclick="openTab(event, 'AboutTax')">About Tax</button>
+        <button class="tab-link" onclick="openTab(event, 'NewRegimeCalc')">Calculation (New Regime)</button>
+        <button class="tab-link" onclick="openTab(event, 'OldRegimeCalc')">Calculation (Old Regime)</button>
+        <button class="tab-link" onclick="openTab(event, 'About')">About</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

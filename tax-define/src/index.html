@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Information</title>
+    <link rel="stylesheet" href="/tax-define/src/style.css">
+    <link rel="stylesheet" href="/nav/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="tax-heading">Tax</h1>
+        <p id="tax-definition"></p>
+
+        <h2 id="types-heading">Types of Taxes</h2>
+        <ul id="tax-types-list"></ul>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-link" id="bug">meow</button>
+        <a href="/h-page/src/index.html"><button class="tab-link" onclick="openTab(event, 'AboutTax')">Home</button></a>
+        <a href="/tax-calculation/src/index.html"><button class="tab-link">Calculation (New Regime)</button></a>
+        <a href="/tax-calculation-old-regime/src/index.html"><button class="tab-link">Calculation (Old Regime)</button></a>
+        <a href="/about/src/index.html"><button class="tab-link">Profile</button></a>
+    </div>
+    
+    <script src="/tax-define/src/script.js"></script>
+</body>
+</html>

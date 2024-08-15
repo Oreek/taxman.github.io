@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/pen-export-yLdPOGY/src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <div id="signupForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <a href="/h-page/src/index.html"><button type="submit">Next</button></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("nameForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("nameInput").value;
+        localStorage.setItem("userName", name);
+        window.location.href = "/h-page/src/index.html";
+    });
+    </script>
+</body>
+</html>
